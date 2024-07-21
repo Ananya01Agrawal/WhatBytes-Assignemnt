@@ -1,16 +1,7 @@
 # User Authentication with Email OR Username in Django
 
 This is a simple Django web application that provides user authentication using both username and email.
-#### Deployment - [auth.harshp.in](https://auth.harshp.in)
 
-## Table of Contents
-
-- [Objective](#objective)
-- [Requirements](#requirements)
-- [Additional Notes](#additional-notes)
-- [New Features](#new-features-implemented)
-- [Setup and Run](#setup-and-run)
-- [Project Walkthrough Video](#project-walkthrough-video)
 
 ## Objective
 
@@ -32,19 +23,13 @@ Create a Django web application with user authentication features, including use
 - [x] Implement a logout functionality that logs the user out and redirects them to the login page.
 - [x] Use Django's built-in authentication system for handling user registration, login, and logout.
 
-### Additional Notes
+##Screenshots
 
-- [x] Ensure the password is securely stored using Django's password hashing.
-- [x] Implement proper form validation to handle errors during registration and login.
-- [x] Use Django templates for rendering HTML pages.
-- [x] Apply basic styling using CSS (you can use an external library like Bootstrap if you prefer).
-- [x] Create a simple SQLite database to store user information.
+![image](https://github.com/user-attachments/assets/35d711a4-ed05-4171-8516-ef98fb4b8a9f)
+![image](https://github.com/user-attachments/assets/16d1a2e1-ecd6-4bbd-93e0-afa583b8caaa)
+![image](https://github.com/user-attachments/assets/81c42af8-ecc0-4c39-a86d-32c9c2099947)
 
-## New Features Implemented
 
-- [x] Implemented Forgot Password and Change Password Features using features provided in the Django Contrib.
-- [x] Implemented SMTP Email Backend to send an email for Forgot Password.
-- [x] Deployed the project to [auth.harshp.in](https://auth.harshp.in) with a PostgreSQL database using the deployment branch.
   
 ## Setup and Run
 
@@ -54,13 +39,12 @@ Create a Django web application with user authentication features, including use
 pip install virtualenv
 python -m virtualenv venv
 venv/Scripts/activate (Windows)
-source venv/bin/activate (Linux)
 ```
 
 1. Clone the repository:
 
 ```bash
-git clone git@github.com:glitchharsh/custom-user-django.git
+git clone 
 cd custom-user-django
 ```
 2. Install dependencies:
@@ -83,8 +67,3 @@ python manage.py runserver
 
 5. Visit [localhost:8000](https://localhost:8000) in browser to access the application.
 
-6. ## Project Walkthrough Video
-   
-[Link to the video](https://www.loom.com/share/ba792070e7424fe5b837f1acf73ba1e8?sid=291afd89-6be0-43e0-a1c1-63bb62e6fae1)
-
-The video came out to be longer than expected. Please watch it at 1.5x or 2x speed.
