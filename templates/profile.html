@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock title %}
+
+{% block content %}
+<div class="header-bar">
+    <h2>Profile</h2>
+</div>
+
+<div class="task-list-wrapper">
+    <div class="task-wrapper">
+        <div class="task-title">
+            Username: {{user.username}}
+        </div>
+    </div>
+    <div class="task-wrapper">
+        <div class="task-title">
+            Email: {{user.email}}
+        </div>
+    </div>
+    <div class="task-wrapper">
+        <div class="task-title">
+            Date Joined: {{user.date_joined.date}}
+        </div>
+    </div>
+    <div class="task-wrapper">
+        <div class="task-title">
+            Last Active: {{user.last_login.date}}
+        </div>
+    </div>
+    {% if user.is_superuser %}
+    <div class="task-wrapper">
+        <div class="task-title">
+            Rank: Admin
+        </div>
+    </div>
+    {% elif user.is_staff %}
+    <div class="task-wrapper">
+        <div class="task-title">
+            Rank: Staff
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<div class="footer-bar">
+    <div class="task-title">
+        <a href="{% url 'welcome' %}"> Home</a> &nbsp;&nbsp;
+        <a href="{% url 'logout' %}">Log Out</a>
+    </div>
+</div>
+
+{% endblock content %}
